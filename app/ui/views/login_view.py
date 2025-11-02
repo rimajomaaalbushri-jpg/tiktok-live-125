@@ -1,4 +1,4 @@
-from typing import Callable
+from collections.abc import Callable
 
 import flet as ft
 
@@ -83,7 +83,7 @@ class LoginPage:
                     margin=ft.margin.only(bottom=10),
                 ),
                 ft.Text(
-                    "StreamCap", 
+                    "Tiktok Live Recorder", 
                     size=28, 
                     weight=ft.FontWeight.BOLD,
                     color="#0078d4",
