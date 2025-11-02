@@ -1,5 +1,5 @@
 [project]
-name = "StreamCap"
+name = "Tiktok Live Recorder"
 version = "1.0.2"
 description = "Live Stream Recorder"
 authors = [{ name = "Hmily" }]
@@ -32,7 +32,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.flet]
 org = "io.github.ihmily.streamcap"
-product = "StreamCap"
+product = "Tiktok Live Recorder"
 company = "io.github.ihmily.streamcap"
 copyright = "Copyright (C) 2025 by Hmily"
 compile.app = false
