@@ -95,7 +95,7 @@ def handle_page_resize(page: ft.Page, app: App) -> callable:
 
 async def main(page: ft.Page) -> None:
 
-    page.title = "StreamCap"
+    page.title = "Tiktok Live Recorder"
     page.window.min_width = MIN_WIDTH
     page.window.min_height = MIN_WIDTH * WINDOW_SCALE
 
@@ -119,6 +119,13 @@ async def main(page: ft.Page) -> None:
         page.theme_mode = ft.ThemeMode.DARK
     else:
         page.theme_mode = ft.ThemeMode.LIGHT
+    
+    # Set RTL layout for Arabic language
+    language = app.settings.user_config.get("language", "Arabic")
+    if language == "Arabic":
+        page.rtl = True
+    else:
+        page.rtl = False
     
     save_progress_overlay = SaveProgressOverlay(app)
     page.overlay.append(save_progress_overlay.overlay)
